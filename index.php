@@ -74,7 +74,7 @@
 			      </div>
 			      <div class="col-sm-2">
 			        <div class="pull-right hidden-xs">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3><i class="glyphicon glyphicon-home"></i></h3></a>
+			          <a href="/" class="dropdown-toggle" data-toggle="dropdown"><h3><i class="glyphicon glyphicon-home"></i></h3></a>
 			        </div>
 			      </div>
 			    </div>
@@ -276,7 +276,6 @@
 
 					<div class="well">
 						<input type="text" value="" id="details_shareURL" class="form-control">
-
 					</div>
 
 				</div>
