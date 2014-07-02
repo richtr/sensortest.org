@@ -275,7 +275,7 @@
 					</h2>
 
 					<div class="well">
-						<input type="text" value="http://localhost:8085/?show=5eb80c210b73ea88" class="form-control">
+						<input type="text" value="" id="details_shareURL" class="form-control">
 
 					</div>
 
@@ -480,8 +480,12 @@
 				}
 
 				var testHref = "/?show=" + browserData.uniqueid;
+
 				var el = document.getElementById("details_testLink");
 				el.href = testHref;
+
+				var el1 = document.getElementById("details_shareURL");
+				el1.value = el.href;
 
 				var samplingData = JSON.parse(browserData["orientationData"]);
 
