@@ -168,13 +168,13 @@
 						Sensor data collection in progress...
 					</h2>
 					<p>
-						<strong>Rotate your device in all directions until the progress bar reaches 100%.</strong>
+						<strong>*Gently* rotate your device in *all* directions until the progress bar reaches 100%.</strong>
 					</p>
 					<p>
 						Once this step is complete you will be able to view all collected sensor data in the next step.
 					</p>
 					<div class="alert alert-warning">
-						For best results move your device in <strong>gentle</strong> sweeping motions and flip it over itself multiple times.
+						For best results move your device in gentle figure-of-8 motions and flip it over itself multiple times during the course of this test.
 					</div>
 					<div id="samplerProgress" class="progress">
 						<div id="samplerMeter" class="progress-bar" role="progressbar" style="width: 0%;">
