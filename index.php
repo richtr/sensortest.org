@@ -173,6 +173,9 @@
 					<p>
 						Once this step is complete you will be able to view all collected sensor data in the next step.
 					</p>
+					<div class="alert alert-warning">
+						For best results move your device in <strong>gentle</strong> sweeping motions and flip it over itself multiple times.
+					</div>
 					<div id="samplerProgress" class="progress">
 						<div id="samplerMeter" class="progress-bar" role="progressbar" style="width: 0%;">
 							0%
