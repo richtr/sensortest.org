@@ -17,6 +17,8 @@ var Sampler = function( progressCallback, errorCallback, successCallback ) {
 
 	var deviceOrientation = {};
 
+	var collectionTimeout;
+
 	// Low-pass filter to isolate gravity components
 	var gravityX = 0, gravityY = 0, gravityZ = 0;
 	var bucketXPos = 0, bucketYPos = 0, bucketZPos = 0;
@@ -43,6 +45,9 @@ var Sampler = function( progressCallback, errorCallback, successCallback ) {
 	}
 
 	var collectDeviceMotionData = function(evt) {
+
+		// Clear timeout timer
+		if (collectionTimeout) window.clearTimeout(collectionTimeout);
 
 		if (!evt.accelerationIncludingGravity || !evt.acceleration) {
 			abortSampler("DeviceMotion does not provide a accelerationIncludingGravity property");
@@ -120,6 +125,11 @@ var Sampler = function( progressCallback, errorCallback, successCallback ) {
 		}
 
 	};
+
+	// Timeout and display an error after 3 seconds of inactivity on sensors
+	collectionTimeout = window.setTimeout(function() {
+		abortSampler("DeviceOrientation Events are not supported in this browser");
+	}, 3000);
 
 	window.addEventListener('deviceorientation', collectDeviceOrientationData, false);
 	window.addEventListener('devicemotion', collectDeviceMotionData, false);
