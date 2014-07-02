@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px arial,sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Kreon', serif;
+  vertical-align:middle;
+}
+
+/* Header */
+
+header {
+  background: #f16251;
+  height:120px;
+  color:#000000;
+}
+
+header h1,header h2,header h3 a,header a,header a:hover {
+  color:#101010;
+  font-weight:800;
+  text-decoration:none;
+}
+
+header h3 {
+  font-family: 'Arial', sans-serif;
+  background: #ffcc33;
+  padding:10px;
+  border-radius:3px;
+  font-size:34px;
+  padding:12px 10px 6px 10px;
+}
+
+header .dropdown-menu {
+  top:74px;
+  background: #ffcc33;
+  border-width:0;
+}
+
+/* Navigation */
+
+#navigation {
+	background-color: #faebcc;
+	margin-top: 60px;
+	padding-bottom: 25px;
+	border-top: 2px solid #999;
+}
+
+/* Footer */
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+#push,
+#footer {
+  height: 60px;
+	padding: 20px 0;
+}
+#footer {
+	color: #ccc;
+  background-color: #666666;
+}
+#footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Initial element states */
+
+.step {
+	display: none;
+}
+
+#welcome {
+	display: block;
+}
+
+#samplingComplete {
+	display: none;
+}
+
+#samplingError, #samplingSuccess {
+	display: none;
+}
+
+/* Responsive highcharts */
+
+.graph {
+	width: 1140px;
+	margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+  .graph {
+  	width: 940px;
+  }
+}
+
+@media (max-width: 992px) {
+  .graph {
+  	width:720px;
+  }
+}
+
+@media (max-width: 750px) {
+  .graph {
+  	width:500px;
+  }
+}
+
+@media (max-width: 520px) {
+  .graph {
+  	width:410px;
+  }
+}
+
+@media (max-width: 400px) {
+  .graph {
+  	width:330px;
+  }
+}
+
+@media (max-width: 320px) {
+  .graph {
+  	width:260px;
+  }
+}
+
+#browserConfirmContainer {
+	display: none;
+}

@@ -1,0 +1,12 @@
+#samplingProgressBar {
+  background-color: black;
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#samplingProgressMeter {
+   background-color: orange;
+   width: 0%;
+   height: 20px;
+   border-radius: 10px;
+}
