@@ -53,7 +53,9 @@
 \t\t\t\tsamplerSection.style.display = \"none\";
 \t\t\t\tresultsSection.style.display = \"none\";
 \t\t\t\tnavigationSection.style.display = \"none\";\n
-\t\t\t\tdrawCharts(browserData);
+\t\t\t\twindow.setTimeout(function() {
+\t\t\t\t\tdrawCharts(browserData);
+\t\t\t\t}, 1);
 \t\t\t}, false);
 \t\t</script>\n";
 		}
