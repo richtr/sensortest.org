@@ -361,7 +361,7 @@
 
 						var optionEl = document.createElement('option');
 						optionEl.value = browser.uniqueid;
-						optionEl.textContent = browser.browserName + " " + browser.browserChannel + " " + browser.browserVersion + " on " + browser.osName + " " + browser.osVersion;
+						optionEl.textContent = (browser.browserName || "<unknown>") + " " + browser.browserChannel + " " + browser.browserVersion + " on " + browser.osName + " " + browser.osVersion;
 
 						if (browser.deviceManufacturer != "" || browser.deviceModel != "") {
 							optionEl.textContent += " (Device: " + browser.deviceManufacturer + " " + browser.deviceModel + ")";
