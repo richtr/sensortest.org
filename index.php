@@ -174,7 +174,7 @@
 						Once this step is complete you will be able to view all collected sensor data in the next step.
 					</p>
 					<div class="alert alert-warning">
-						For best results move your device in gentle figure-of-8 motions and flip it over itself multiple times during the course of this test.
+						For best results move your device in gentle figure-of-8 motions (e.g. <a href="http://www.youtube.com/watch?v=Lo1ZE7mpKVg" target="_blank">like in this video</a>) and keep changing how you hold the device during the test (e.g. upside down, on one side, on the other side, etc).
 					</div>
 					<div id="samplerProgress" class="progress">
 						<div id="samplerMeter" class="progress-bar" role="progressbar" style="width: 0%;">
